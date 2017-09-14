@@ -114,7 +114,8 @@ HibernateDoc.OutdatedContent = (function() {
 				'	font-weight: bold;' +
 				'	font-size: 20px;' +
 				'	color: white;' +
-				'	text-shadow: 0 1px 1px rgba(85, 85, 85, 0.55)' +
+				'	text-shadow: 0 1px 1px rgba(85, 85, 85, 0.55);' +
+				'	z-index: 1001;' +
 				'}' +
 				'a.version {' +
 				'	border: 1px solid #AAA;' +
@@ -132,6 +133,12 @@ HibernateDoc.OutdatedContent = (function() {
 				'	float:right; ' +
 				'	margin-right: 40px;' +
 				'	cursor: pointer;' +
+				'	text-decoration:none;' +
+				'	color: white;' +
+				'	font-weight: bold;' +
+				'}' +
+				'#toc.toc2 > ul {' +
+				'	margin-bottom: 8em;' +
 				'}' +
 			'</style>');
 			if (document.cookie.indexOf('hibernate-doc-hide-outdated-cookie=true') == -1) {
